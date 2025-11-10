@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    margin: 100px;
+    background-color: #95cdff;
+}
+
+#navbarlist {
+    list-style-type: none;
+    display: flex;
+}
+
+footer {
+    text-align: center; 
+    line-height: normal; 
+    margin-top: 30px;
+    padding-top: 30px;;
+    clear: left;
+    background-color: aliceblue;
+}
