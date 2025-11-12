@@ -12,6 +12,7 @@
 <body>
   <nav class="navbar">
     <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
       <li><a href="main.html">Rancho Tech Makers</a></li>
       <li class="navbaritem"><a href="index.html">Home</a></li>
       <li class="navbaritem"><a href="about/aboutus.html">About us</a></li>
@@ -23,6 +24,7 @@
       <li class="navbaritem"><a href="index.html">Home</a></li>
       <li class="navbaritem"><a href="about/aboutus.html">About us</a></li>
       <li class="navbaritem"><a href="about/contacts.html">Contact us</a></li>
+      <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
   </nav>
   <div id="topOpening">
@@ -44,7 +46,17 @@
       <br>
       All trademarks and registered trademarks appearing on this site are the property of their respective owners.
     </small>
-
-
   </footer>
 </body>
+
+<script>
+  function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+</script>
