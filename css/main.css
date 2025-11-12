@@ -62,7 +62,7 @@ body {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: gray;
+    background-color: rgb(14, 14, 14);
     box-shadow: black;
     display: flex;
     flex-direction: column;
