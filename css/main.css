@@ -1,7 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     text-align: center;
-    
-    background-color: #95cdff;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .div {
@@ -10,41 +20,75 @@ body {
     align-items: center;
 }
 
-.navbaritem {
-    padding-left: 5px;
+.navbar {
+    background-color: black;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar li {
+    height: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
     padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
 }
 
-/* Desktop */
-@media (max-width: 1440px) {
-    
+.navbar a:hover {
+    color: cadetblue;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-    
+.navbar li:first-child {
+    margin-right: auto;
 }
 
-/* Phone */
-@media (max-width: 600px) {
-    
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: gray;
+    box-shadow: black;
+    display: flex;
+    flex-direction: column;
 }
+
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
-#navbarlist {
-    list-style-type: none;
-    display: flex;
-}
 
 footer {
-    text-align: center; 
-    line-height: normal; 
+    text-align: center;
+    line-height: normal;
     margin-top: 30px;
-    padding-top: 30px;;
+    padding-top: 30px;
+    ;
     clear: left;
     background-color: aliceblue;
 }
+
+/* Desktop */
+@media (min-width: 1440px) {}
+
+/* Tablet */
+@media (min-width: 1024px) {}
+
+/* BASE LAYOUT Phone */
+@media (max-width: 600px) {}
