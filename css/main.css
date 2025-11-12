@@ -31,6 +31,11 @@ body {
     align-items: center;
 }
 
+.navbar .topNavbar .navbaritems{
+    display: none;
+    flex-direction: row;
+}
+
 .navbar li {
     height: 50px;
 }
@@ -102,5 +107,14 @@ footer {
 /* Tablet */
 @media (min-width: 1024px) {}
 
-/* BASE LAYOUT Phone */
-@media (max-width: 600px) {}
+/*Devices bigger than phones*/
+@media (min-width: 600px) {
+    .navbar .topNavbar .navbaritems.showOnTablet {
+        display: flex !important;
+    }
+    .hideBurger {
+        display: none;
+    }
+}
+
+/* BASE LAYOUT is Phone */
