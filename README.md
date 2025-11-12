@@ -8,4 +8,4 @@ List of things to put on our website:
 - Info on how to join
 
 ## Tasks
-Who is currently on a task:
+Who is currently on a task: Reese
