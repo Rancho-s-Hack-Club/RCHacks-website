@@ -27,7 +27,7 @@ body {
 .navbar ul {
     display: flex;
     list-style-type: none;
-    width: 100%;
+    
     justify-content: flex-end;
     align-items: center;
 }
@@ -55,7 +55,9 @@ body {
     margin-right: auto;
 }
 
-.sidebar {
+.navbar .sidebar {
+    padding: 0;
+    margin: 0;
     position: fixed;
     top: 0;
     right: 0;
@@ -66,6 +68,8 @@ body {
     box-shadow: black;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 
