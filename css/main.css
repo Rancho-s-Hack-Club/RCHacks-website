@@ -98,23 +98,69 @@ footer {
     padding-top: 30px;
     ;
     clear: left;
-    background-color: aliceblue;
+    background-color: rgb(74, 74, 74);
+}
+
+#heroBanner {
+    height: 65vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#heroBanner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* This creates a black overlay with 40% opacity */
+    background: rgba(0, 0, 0, 0.4); 
+    /* Ensures the overlay is above the image but below the text */
+    z-index: 1; 
+}
+
+#heroBanner img {
+    position: relative;
+    display: inline-block;
+    color: rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+#heroBanner h1 {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #eeeeec;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 /* Desktop */
 @media (min-width: 1440px) {}
 
 /* Tablet */
-@media (min-width: 1024px) {}
-
-/*Devices bigger than phones*/
-@media (min-width: 600px) {
+@media (min-width: 1024px) {
+    /*this is for showing navbar items after resolution is greater than 1024px*/
     .navbar .topNavbar .navbaritems.showOnTablet {
         display: flex !important;
     }
+
     .hideBurger {
         display: none;
     }
+}
+
+/*Devices bigger than phones*/
+@media (min-width: 600px) {
+    
 }
 
 /* BASE LAYOUT is Phone */
