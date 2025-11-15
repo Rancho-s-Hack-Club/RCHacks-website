@@ -137,7 +137,7 @@ footer {
 }
 
 .heroBanner h1 {
-    font-size: clamp(1.5rem, 12vw, 4rem);
+    font-size: clamp(1.5rem, 12vw, 6rem);
     margin: 0;
     display: block;
     position: absolute;
