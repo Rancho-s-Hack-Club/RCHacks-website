@@ -237,12 +237,36 @@ footer {
 
 
 
+.contactWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+}
+
+.contactInfo {
+    max-width: 400px; /* Limit the width of each contactInfo block */
+    flex: 1 1 300px; /* Allow it to grow and shrink, with a minimum width of 300px */
+    text-align: center; /* Optional: Center text inside contactInfo */
+}
+
+
+
+
+
 /* Desktop */
 @media (min-width: 1440px) {}
 
 /* Tablet */
 @media (min-width: 1024px) {
-    /*this is for showing navbar items after resolution is greater than 1024px*/
+    /*this is for showing navbar items if device resolution is greater than 1024px*/
     .navbar .topNavbar .navbaritems.showOnTablet {
         display: flex !important;
     }
@@ -267,6 +291,10 @@ footer {
     .whyJoinWrapper {
         display: flex;
         /*add it so each block is its own container with borders and edges*/
+    }
+
+    .contactInfo {
+        max-width: 400px;
     }
 
     .coLeadersWrapper {
